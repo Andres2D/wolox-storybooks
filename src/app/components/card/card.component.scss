@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    height: 450px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+    transition: all 300ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    &:hover {
+        transform: scale(1.05, 1.05);
+    }
+
+    .picture {
+        margin: 25px auto;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .info {
+        padding: 0 25px 0 25px;
+        .label {
+            margin-bottom: 2px;
+        }
+    }
+
+}
