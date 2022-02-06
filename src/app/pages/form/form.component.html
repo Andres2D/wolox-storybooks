@@ -1,9 +1,11 @@
 <div class="form-content">
     <!-- Alert -->
-    <div class="alert info">
-        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <span>&times;</span>
-    </div>
+    <app-alert
+        *ngIf="showAlert"
+        type="info"
+        [closeButton]="true"
+        (closeAction)="showAlertMessage(false)"
+    ></app-alert>
 
     <!-- Form -->
     <form class="form">
@@ -21,11 +23,14 @@
         </div>
     </form>
     <div class="actions">
-        <button class="button danger">
-            Reset
-        </button>
-        <button class="button success">
-            Send
-        </button>
+        <app-button
+            type="danger"
+            label="Reset"
+        ></app-button>
+        <app-button
+            type="success"
+            label="Send"
+            (action)="showAlertMessage(true)"
+        ></app-button>
     </div>
 </div>
