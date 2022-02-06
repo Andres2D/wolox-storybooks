@@ -1,0 +1,22 @@
+.form-content {
+    margin: 50px auto;
+    height: 500px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 60%;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 50px auto;
+        width: 50%;
+    }
+}

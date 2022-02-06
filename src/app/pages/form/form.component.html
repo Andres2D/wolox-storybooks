@@ -1,0 +1,40 @@
+<div class="form-content">
+    <!-- Alert -->
+    <app-alert
+        *ngIf="showAlert"
+        type="info"
+        [closeButton]="true"
+        (closeAction)="showAlertMessage(false)"
+    ></app-alert>
+
+    <!-- Form -->
+    <form class="form">
+        <app-input-form
+            label="CC/NIT"
+            type="number"
+            [required]="true"
+        ></app-input-form>
+        <app-input-form
+            label="Name"
+            type="text"
+            [required]="true"
+        ></app-input-form>
+        <app-input-form
+            label="Message"
+            type="text"
+        ></app-input-form>
+    </form>
+
+    <!-- Actions -->
+    <div class="actions">
+        <app-button
+            type="danger"
+            label="Reset"
+        ></app-button>
+        <app-button
+            type="success"
+            label="Send"
+            (action)="showAlertMessage(true)"
+        ></app-button>
+    </div>
+</div>

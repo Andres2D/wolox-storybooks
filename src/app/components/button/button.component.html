@@ -1,0 +1,10 @@
+<button 
+    class="button"
+    [ngClass]="{
+        'success': type === 'success',
+        'danger': type === 'danger'
+    }"
+    (click)="emitAction()"
+    >
+    {{label}}
+</button>

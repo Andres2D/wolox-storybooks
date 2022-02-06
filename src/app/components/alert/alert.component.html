@@ -1,0 +1,14 @@
+<div 
+    class="alert"
+    [ngClass]="{
+        'error': type === 'error', 
+        'info': type === 'info',
+        'warning': type === 'warning'
+    }"
+    >
+    <p class="message">{{message}}</p>
+    <span 
+        *ngIf="closeButton"
+        (click)="close()"
+        >&times;</span>
+</div>

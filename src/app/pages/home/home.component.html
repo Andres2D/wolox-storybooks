@@ -1,0 +1,8 @@
+<div class="cards">
+    <app-card *ngFor="let character of data"
+        [image]="character.image"
+        [location]="character.location.name"
+        [name]="character.name"
+        [status]="character.status"
+    ></app-card>
+</div>
