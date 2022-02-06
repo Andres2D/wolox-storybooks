@@ -9,19 +9,23 @@
 
     <!-- Form -->
     <form class="form">
-        <div class="input-section">
-            <label class="label">CC/NIT <span class="required">*</span></label>
-            <input class="input" type="text">
-        </div>
-        <div class="input-section">
-            <label class="label">Name <span class="required">*</span></label>
-            <input class="input" type="text">
-        </div>
-        <div class="input-section">
-            <label class="label">Message</label>
-            <input class="input" type="text">
-        </div>
+        <app-input-form
+            label="CC/NIT"
+            type="number"
+            [required]="true"
+        ></app-input-form>
+        <app-input-form
+            label="Name"
+            type="text"
+            [required]="true"
+        ></app-input-form>
+        <app-input-form
+            label="Message"
+            type="text"
+        ></app-input-form>
     </form>
+
+    <!-- Actions -->
     <div class="actions">
         <app-button
             type="danger"

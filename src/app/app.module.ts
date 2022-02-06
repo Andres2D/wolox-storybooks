@@ -10,6 +10,7 @@ import { CardComponent } from './components/card/card.component';
 import { FormComponent } from './pages/form/form.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { ButtonComponent } from './components/button/button.component';
+import { InputFormComponent } from './components/input-form/input-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ButtonComponent } from './components/button/button.component';
     CardComponent,
     FormComponent,
     AlertComponent,
-    ButtonComponent
+    ButtonComponent,
+    InputFormComponent
   ],
   imports: [
     BrowserModule,
