@@ -1,0 +1,1688 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "Character",
+            "id": "interface-Character-ce4aa6428afc64caae89eb338e4a8a625f7dbd1df341b83ac0431f0e644209e6962df84c08296ac23df6ffab1df6c5602e456d358d0f15a1cb3d7beffbdb8341",
+            "file": "src/app/interfaces/character.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Character {\n    id:\tnumber;\n    name: string;\n    status:\t\"Alive\" | \"unknown\" | \"Dead\";\n    location: OriginLocation;\n    image: string;\n}\n\nexport interface OriginLocation {\n    name: string;\n    url: string;\n}\n",
+            "properties": [
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "image",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "location",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "OriginLocation",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "status",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"Alive\" | \"unknown\" | \"Dead\"",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "OriginLocation",
+            "id": "interface-OriginLocation-ce4aa6428afc64caae89eb338e4a8a625f7dbd1df341b83ac0431f0e644209e6962df84c08296ac23df6ffab1df6c5602e456d358d0f15a1cb3d7beffbdb8341",
+            "file": "src/app/interfaces/character.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Character {\n    id:\tnumber;\n    name: string;\n    status:\t\"Alive\" | \"unknown\" | \"Dead\";\n    location: OriginLocation;\n    image: string;\n}\n\nexport interface OriginLocation {\n    name: string;\n    url: string;\n}\n",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "url",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "src/stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AlertComponent",
+            "id": "component-AlertComponent-1939d23299009c101cd67ffb6d5850b58786eb9aaba976792853b3d74d108a65d39d83ee6c2c3c431183d59aa7fc88afdd82b5c71021dd07604a38cb03168041",
+            "file": "src/app/components/alert/alert.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-alert",
+            "styleUrls": [
+                "./alert.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./alert.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "closeButton",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "message",
+                    "defaultValue": "'Lorem ipsum dolor sit amet consectetur adipisicing elit.'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'info'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"error\" | \"warning\" | \"info\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-alert',\n  templateUrl: './alert.component.html',\n  styleUrls: ['./alert.component.scss']\n})\nexport class AlertComponent {\n  @Input() type: 'error' | 'warning' | 'info' = 'info';\n  @Input() message: string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';\n  @Input() closeButton: boolean = false;\n  @Output() onClick = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".alert {\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    position: relative;\n    margin: 0px auto;\n    width: 100%;\n\n    span {\n        cursor: pointer;\n        position: absolute;\n        right: 5px;\n        top: 0;\n        font-size: 20px;\n    }\n}\n\n.error {\n    border: 1px solid #C52F00;\n    border-radius: 5px;\n    background-color: #ebc8c4;\n    color: #C52F00;\n}\n\n.warning {\n    border: 1px solid #A78802;\n    border-radius: 5px;\n    background-color: #f8f3d6;\n    color: #A78802;\n}\n\n.info {\n    border: 1px solid #06486D;\n    border-radius: 5px;\n    background-color: #cbe7f4;\n    color: #06486D;\n}\n",
+                    "styleUrl": "./alert.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div \n    class=\"alert\"\n    [ngClass]=\"{\n        'error': type === 'error', \n        'info': type === 'info',\n        'warning': type === 'warning'\n    }\"\n    >\n    <p class=\"message\">{{message}}</p>\n    <span \n        *ngIf=\"closeButton\"\n        (click)=\"onClick.emit($event)\"\n        >&times;</span>\n</div>\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-654219f1ef2f21e5d6169c1afebd9a51ac9748153348fc781a494a603bd78a38c754464d51bcb38ab2630627604149d48d662788d69f2d0d7c159f7f604f51e2",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'wolox-storybooks'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'wolox-storybooks';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n<app-footer></app-footer>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 711,
+                            "end": 724,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 712,
+                                "end": 720,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "CardComponent",
+            "id": "component-CardComponent-ab590b431ee9b2111cc551221e02d7c6d1d8472506a32f301cfe6e0359b5a99057735ceb16c31337cfb8c7c115391d6039641c60614066ee5ffec3190c500d91",
+            "file": "src/app/components/card/card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-card",
+            "styleUrls": [
+                "./card.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./card.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "image",
+                    "defaultValue": "'https://rickandmortyapi.com/api/character/avatar/4.jpeg'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "location",
+                    "defaultValue": "'Earth'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "defaultValue": "'Beth'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "status",
+                    "defaultValue": "'unknown'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "\"Alive\" | \"unknown\" | \"Dead\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n})\nexport class CardComponent {\n  @Input() image: string = 'https://rickandmortyapi.com/api/character/avatar/4.jpeg';\n  @Input() name: string = 'Beth';\n  @Input() location: string = 'Earth';\n  @Input() status: 'Alive' | 'unknown' | 'Dead' = 'unknown';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".card {\n    display: flex;\n    flex-direction: column;\n    background-color: #EAEAEA;\n    height: 480px;\n    width: 250px;\n    border-radius: 10px;\n    border: 1px solid #c4c4c4;\n    cursor: pointer;\n    transition: all 300ms;\n    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;\n    margin-bottom: 50px;\n    margin-right: 10px;\n    margin-left: 10px;\n\n    &:hover {\n        transform: scale(1.05, 1.05);\n    }\n\n    .picture {\n        margin: 25px auto;\n        width: 200px;\n        border-radius: 10px;\n    }\n\n    .info {\n        padding: 0 25px 0 25px;\n        .label {\n            margin-bottom: 2px;\n        }\n    }\n\n}\n",
+                    "styleUrl": "./card.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"card\">\n    <img class=\"picture\" [src]=\"image\" [alt]=\"name\">\n    <div class=info>\n        <h3 class=\"label\">Name</h3><span>{{name}}</span>\n        <h3 class=\"label\">Location</h3><span>{{location}}</span>\n        <h3 class=\"label\">Status</h3><span>{{status}}</span>\n    </div>\n</div>\n"
+        },
+        {
+            "name": "CustomButtonComponent",
+            "id": "component-CustomButtonComponent-4d65c8d9a878dca17204fdc8574f93148d46f588fec5d4277c416175b2b24ff6da21752b69075665778280862839c6068a10bd84f57ac41ffbccccbec66f3d59",
+            "file": "src/app/components/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "'Click me!'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'success'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "\"success\" | \"danger\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n})\nexport class CustomButtonComponent {\n\n  @Input() type: 'success' | 'danger' = 'success';\n  @Input() label: string = 'Click me!';\n  @Output() onClick = new EventEmitter<Event>();\n\n  // emitAction(): void {\n  //   this.action.emit();\n  // }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".button {\n    padding: 10px 20px 10px 20px;\n    width: 100px;\n    color: white;\n    cursor: pointer;\n    border-radius: 5px;\n    transition: all 300ms;\n}\n\n.danger {\n    background-color: #C7122A;\n    border: 1px solid #C7122A;\n\n    &:hover {\n        background-color: white;\n        color: #C7122A;\n    }\n}\n\n.success {\n    background-color: #239F01;\n    border: 1px solid #239F01;\n\n    &:hover {\n        background-color: white;\n        color: #239F01;\n    }\n}\n",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<button \n    class=\"button\"\n    [ngClass]=\"{\n        'success': type === 'success',\n        'danger': type === 'danger'\n    }\"\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    >\n    {{label}}\n</button>\n"
+        },
+        {
+            "name": "FooterComponent",
+            "id": "component-FooterComponent-50a2c14741ad06a95ac5a72455c3bb2c4b13260abea2e4488eb5b510694753074c52595ba08125a44bd9fd0c50cd3be240529e184841246977305b1734dc8717",
+            "file": "src/app/components/footer/footer.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-footer",
+            "styleUrls": [
+                "./footer.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./footer.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-footer',\n  templateUrl: './footer.component.html',\n  styleUrls: ['./footer.component.scss']\n})\nexport class FooterComponent {\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "footer {\n    background-color: black;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    color: white;\n    text-align: center;\n    padding: 10px 0 10px 0;\n}\n",
+                    "styleUrl": "./footer.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<footer>Wolox - Storybooks</footer>\n"
+        },
+        {
+            "name": "FormComponent",
+            "id": "component-FormComponent-5eb82fd6332aecdef39c3cb73532b8583e041ab1e30f76becb87ad1d4591db51f113270eb026aace9d4ee4084d2e0722134decc5e2f4419c30afa174c905253d",
+            "file": "src/app/pages/form/form.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-form",
+            "styleUrls": [
+                "./form.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./form.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "showAlert",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "showAlertMessage",
+                    "args": [
+                        {
+                            "name": "option",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "option",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-form',\n  templateUrl: './form.component.html',\n  styleUrls: ['./form.component.scss']\n})\nexport class FormComponent {\n\n  showAlert: boolean = true;\n\n  showAlertMessage(option: boolean): void {\n    this.showAlert = option;\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".form-content {\n    margin: 50px auto;\n    height: 500px;\n    width: 80%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n    .form {\n        display: flex;\n        flex-direction: column;\n        margin-top: 50px;\n        width: 60%;\n    }\n\n    .actions {\n        display: flex;\n        justify-content: space-evenly;\n        margin: 50px auto;\n        width: 50%;\n    }\n}",
+                    "styleUrl": "./form.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"form-content\">\n    <!-- Alert -->\n    <app-alert\n        *ngIf=\"showAlert\"\n        type=\"info\"\n        [closeButton]=\"true\"\n        (onClick)=\"showAlertMessage(false)\"\n    ></app-alert>\n\n    <!-- Form -->\n    <form class=\"form\">\n        <app-input-form\n            label=\"CC/NIT\"\n            type=\"number\"\n            [required]=\"true\"\n        ></app-input-form>\n        <app-input-form\n            label=\"Name\"\n            type=\"text\"\n            [required]=\"true\"\n        ></app-input-form>\n        <app-input-form\n            label=\"Message\"\n            type=\"text\"\n        ></app-input-form>\n    </form>\n\n    <!-- Actions -->\n    <div class=\"actions\">\n        <app-button\n            type=\"danger\"\n            label=\"Reset\"\n        ></app-button>\n        <app-button\n            type=\"success\"\n            label=\"Send\"\n            (onClick)=\"showAlertMessage(true)\"\n        ></app-button>\n    </div>\n</div>\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-0cd94fbc94a83702e45bf987cb3b3f9074d69cd27e6ca2e4fbac0dc5b5047bd4dc3a9ce8a77f6bd9ab7ae3e6ca8e49b34bed529ca0da0fa428fec544a0324870",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 54,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 63,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 57,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 60,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "HomeComponent",
+            "id": "component-HomeComponent-3b36073951826069b40316d86cf96bc6a95a310465aa8690eeee355d2ea7ab71399346efc5725e969b54c492348c70da792e03fbfa54f6f6ca143da03f9cedc6",
+            "file": "src/app/pages/home/home.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home",
+            "styleUrls": [
+                "./home.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./home.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "data",
+                    "defaultValue": "[\n    {\n        id: 1,\n        name: 'Rick Sanchez',\n        status: 'Alive',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',\n    },\n    {\n        id: 2,\n        name: 'Morty Smith',\n        status: 'Alive',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',\n    },\n    {\n        id: 3,\n        name: 'Summer Smith',\n        status: 'Alive',\n        \n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg',\n    },\n    {\n        id: 4,\n        name: 'Beth Smith',\n        status: 'Alive',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg',\n    },\n    {\n        id: 5,\n        name: 'Jerry Smith',\n        status: 'Alive',\n        \n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg',\n    },\n    {\n        id: 6,\n        name: 'Abadango Cluster Princess',\n        status: 'Alive',\n        location: {\n        name: 'Abadango',\n        url: 'https://rickandmortyapi.com/api/location/2',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/6.jpeg',\n    },\n    {\n        id: 7,\n        name: 'Abradolf Lincler',\n        status: 'unknown',\n        location: {\n        name: 'Testicle Monster Dimension',\n        url: 'https://rickandmortyapi.com/api/location/21',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/7.jpeg',\n    },\n    {\n        id: 8,\n        name: 'Adjudicator Rick',\n        status: 'Dead',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/8.jpeg',\n    },\n    {\n        id: 9,\n        name: 'Agency Director',\n        status: 'Dead',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/9.jpeg',\n    },\n    {\n        id: 10,\n        name: 'Alan Rails',\n        status: 'Dead',\n        location: {\n        name: \"Worldender's lair\",\n        url: 'https://rickandmortyapi.com/api/location/4',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/10.jpeg',\n    },\n    {\n        id: 11,\n        name: 'Albert Einstein',\n        status: 'Dead',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/11.jpeg',\n    },\n    {\n        id: 12,\n        name: 'Alexander',\n        status: 'Dead',\n        location: {\n        name: 'Anatomy Park',\n        url: 'https://rickandmortyapi.com/api/location/5',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/12.jpeg',\n    },\n    {\n        id: 13,\n        name: 'Alien Googah',\n        status: 'unknown',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/13.jpeg',\n    },\n    {\n        id: 14,\n        name: 'Alien Morty',\n        status: 'unknown',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/14.jpeg',\n    },\n    {\n        id: 15,\n        name: 'Alien Rick',\n        status: 'unknown',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/15.jpeg',\n    },\n    {\n        id: 16,\n        name: 'Amish Cyborg',\n        status: 'Dead',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/16.jpeg',\n    },\n    {\n        id: 17,\n        name: 'Annie',\n        status: 'Alive',\n        location: {\n        name: 'Anatomy Park',\n        url: 'https://rickandmortyapi.com/api/location/5',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/17.jpeg',\n    },\n    {\n        id: 18,\n        name: 'Antenna Morty',\n        status: 'Alive',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/18.jpeg',\n    },\n    {\n        id: 19,\n        name: 'Antenna Rick',\n        status: 'unknown',\n        location: {\n        name: 'unknown',\n        url: '',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/19.jpeg',\n    },\n    {\n        id: 20,\n        name: 'Ants in my Eyes Johnson',\n        status: 'unknown',\n        location: {\n        name: 'Interdimensional Cable',\n        url: 'https://rickandmortyapi.com/api/location/6',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/20.jpeg',\n    },\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Character[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { Character } from '../../interfaces/character.interface';\n\n@Component({\n  selector: 'app-home',\n  templateUrl: './home.component.html',\n  styleUrls: ['./home.component.scss']\n})\nexport class HomeComponent {\n\n  data: Character[] = [\n    {\n        id: 1,\n        name: 'Rick Sanchez',\n        status: 'Alive',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',\n    },\n    {\n        id: 2,\n        name: 'Morty Smith',\n        status: 'Alive',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',\n    },\n    {\n        id: 3,\n        name: 'Summer Smith',\n        status: 'Alive',\n        \n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg',\n    },\n    {\n        id: 4,\n        name: 'Beth Smith',\n        status: 'Alive',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg',\n    },\n    {\n        id: 5,\n        name: 'Jerry Smith',\n        status: 'Alive',\n        \n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg',\n    },\n    {\n        id: 6,\n        name: 'Abadango Cluster Princess',\n        status: 'Alive',\n        location: {\n        name: 'Abadango',\n        url: 'https://rickandmortyapi.com/api/location/2',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/6.jpeg',\n    },\n    {\n        id: 7,\n        name: 'Abradolf Lincler',\n        status: 'unknown',\n        location: {\n        name: 'Testicle Monster Dimension',\n        url: 'https://rickandmortyapi.com/api/location/21',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/7.jpeg',\n    },\n    {\n        id: 8,\n        name: 'Adjudicator Rick',\n        status: 'Dead',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/8.jpeg',\n    },\n    {\n        id: 9,\n        name: 'Agency Director',\n        status: 'Dead',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/9.jpeg',\n    },\n    {\n        id: 10,\n        name: 'Alan Rails',\n        status: 'Dead',\n        location: {\n        name: \"Worldender's lair\",\n        url: 'https://rickandmortyapi.com/api/location/4',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/10.jpeg',\n    },\n    {\n        id: 11,\n        name: 'Albert Einstein',\n        status: 'Dead',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/11.jpeg',\n    },\n    {\n        id: 12,\n        name: 'Alexander',\n        status: 'Dead',\n        location: {\n        name: 'Anatomy Park',\n        url: 'https://rickandmortyapi.com/api/location/5',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/12.jpeg',\n    },\n    {\n        id: 13,\n        name: 'Alien Googah',\n        status: 'unknown',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/13.jpeg',\n    },\n    {\n        id: 14,\n        name: 'Alien Morty',\n        status: 'unknown',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/14.jpeg',\n    },\n    {\n        id: 15,\n        name: 'Alien Rick',\n        status: 'unknown',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/15.jpeg',\n    },\n    {\n        id: 16,\n        name: 'Amish Cyborg',\n        status: 'Dead',\n        location: {\n        name: 'Earth (Replacement Dimension)',\n        url: 'https://rickandmortyapi.com/api/location/20',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/16.jpeg',\n    },\n    {\n        id: 17,\n        name: 'Annie',\n        status: 'Alive',\n        location: {\n        name: 'Anatomy Park',\n        url: 'https://rickandmortyapi.com/api/location/5',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/17.jpeg',\n    },\n    {\n        id: 18,\n        name: 'Antenna Morty',\n        status: 'Alive',\n        location: {\n        name: 'Citadel of Ricks',\n        url: 'https://rickandmortyapi.com/api/location/3',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/18.jpeg',\n    },\n    {\n        id: 19,\n        name: 'Antenna Rick',\n        status: 'unknown',\n        location: {\n        name: 'unknown',\n        url: '',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/19.jpeg',\n    },\n    {\n        id: 20,\n        name: 'Ants in my Eyes Johnson',\n        status: 'unknown',\n        location: {\n        name: 'Interdimensional Cable',\n        url: 'https://rickandmortyapi.com/api/location/6',\n        },\n        image: 'https://rickandmortyapi.com/api/character/avatar/20.jpeg',\n    },\n  ];\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".cards {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    margin: 50px auto;\n    width: 90%;\n}\n",
+                    "styleUrl": "./home.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"cards\">\n    <app-card *ngFor=\"let character of data\"\n        [image]=\"character.image\"\n        [location]=\"character.location.name\"\n        [name]=\"character.name\"\n        [status]=\"character.status\"\n    ></app-card>\n</div>\n"
+        },
+        {
+            "name": "InputFormComponent",
+            "id": "component-InputFormComponent-97a5bf61ab88efdcfe108c952f7680ba1682969f9348bd8de5a22112c1d08374f338245cacd4de840832779741ccf46b514a1cc004edc8952da0bfc396d627ba",
+            "file": "src/app/components/input-form/input-form.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-input-form",
+            "styleUrls": [
+                "./input-form.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./input-form.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "'Input'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "required",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "\"text\" | \"number\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-input-form',\n  templateUrl: './input-form.component.html',\n  styleUrls: ['./input-form.component.scss']\n})\nexport class InputFormComponent {\n  @Input() label: string = 'Input';\n  @Input() required: boolean = false;\n  @Input() type: 'text' | 'number' = 'text';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".input-section {\n    align-items: center;\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    margin-bottom: 30px;\n\n    .label {\n        font-size: 20px;\n\n        .required {\n            color: red;\n        }\n    }\n\n    .input {\n        border: 0.5px solid;\n        border-radius: 5px;\n        padding: 5px;\n        width: 250px;\n    }\n}\n",
+                    "styleUrl": "./input-form.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"input-section\">\n    <label class=\"label\">{{label}} <span *ngIf=\"required\" class=\"required\">*</span></label>\n    <input class=\"input\" [type]=\"type\">\n</div>\n"
+        },
+        {
+            "name": "NavbarComponent",
+            "id": "component-NavbarComponent-a85360e80c33fd3edebbd0ef49601d2bef2587365e1733cb45f6ad6475d301c21b95c123ed608c5e6e7440961ca8d1187987e1d9825bc445dbd62afb9e5d4a4f",
+            "file": "src/app/components/navbar/navbar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-navbar",
+            "styleUrls": [
+                "./navbar.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./navbar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-navbar',\n  templateUrl: './navbar.component.html',\n  styleUrls: ['./navbar.component.scss']\n})\nexport class NavbarComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".navbar {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    margin-top: 10px;\n    border-bottom: 5px solid black;\n\n    .logo {\n        cursor: pointer;\n        width: 200px;\n    }\n\n    .menu {\n        display: flex;\n        justify-content: space-evenly;\n        width: 500px;\n\n        .item {\n            text-decoration: none;\n            font-size: 20px;\n            color: black;\n            transition: all 300ms;\n\n            &:hover {\n                color: gray;\n            }\n        }\n    }\n}\n",
+                    "styleUrl": "./navbar.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<nav class=\"navbar\">\n    <img class=\"logo\" src=\"../../../assets/images/Wolox_Part of Accenture__Logo.png\" alt=\"wolox\">\n    <div class=\"menu\">\n        <a class=\"item\" routerLink=\"/home\">Main</a>\n        <a class=\"item\" routerLink=\"/form\">Form</a>\n        <a class=\"item\" href=\"#\">Extra</a>\n    </div>\n</nav>\n"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-432c9ae0bcf6e2e1f46701f7565a67376cb10145b7d049c5fe930cf8f075c6e02e24151589750b18cbaa8266f7c61393b95c4d833fbfd71ee228904aa014349f",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 65,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 74,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 68,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 71,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nsection h2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nsection p {\n  margin: 1em 0;\n}\n\nsection a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nsection ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nsection li {\n  margin-bottom: 8px;\n}\n\nsection .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\nsection .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\nsection .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\nsection .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-57ff82a496411a4e2b6959902d12435d1f0917df39f57011bfb8142a5bc276b4c01406cd22e0032037fadd3759c080e5f4d102738ecc4582a8aa67167bbdc711",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { NavbarComponent } from './components/navbar/navbar.component';\nimport { HomeComponent } from './pages/home/home.component';\nimport { FooterComponent } from './components/footer/footer.component';\nimport { CardComponent } from './components/card/card.component';\nimport { FormComponent } from './pages/form/form.component';\nimport { AlertComponent } from './components/alert/alert.component';\nimport { CustomButtonComponent } from './components/button/button.component';\nimport { InputFormComponent } from './components/input-form/input-form.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    NavbarComponent,\n    HomeComponent,\n    FooterComponent,\n    CardComponent,\n    FormComponent,\n    AlertComponent,\n    CustomButtonComponent,\n    InputFormComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AlertComponent"
+                        },
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "CardComponent"
+                        },
+                        {
+                            "name": "CustomButtonComponent"
+                        },
+                        {
+                            "name": "FooterComponent"
+                        },
+                        {
+                            "name": "FormComponent"
+                        },
+                        {
+                            "name": "HomeComponent"
+                        },
+                        {
+                            "name": "InputFormComponent"
+                        },
+                        {
+                            "name": "NavbarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-53366b587f681e609323e6e0ff36547793a341b01d56464a75dc326249c076a3a00b700288868b36b04306aa76f4dabbda264a6c6c39183aa777d31e7f30304a",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { HomeComponent } from './pages/home/home.component';\nimport { FormComponent } from './pages/form/form.component';\n\nconst routes: Routes = [\n  {\n    path: 'home',\n    component: HomeComponent,\n  },\n  {\n    path: 'form',\n    component: FormComponent,\n  },\n  {\n    path: '**',\n    pathMatch: 'full',\n    redirectTo: 'home'\n  }\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "home",
+                        "component": "HomeComponent"
+                    },
+                    {
+                        "path": "form",
+                        "component": "FormComponent"
+                    },
+                    {
+                        "path": "**",
+                        "pathMatch": "full",
+                        "redirectTo": "home"
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/alert/alert.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AlertComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CustomButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/card/card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/footer/footer.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FooterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/input-form/input-form.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputFormComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/navbar/navbar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NavbarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/interfaces/character.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Character",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/interfaces/character.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "OriginLocation",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/form/form.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FormComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home/home.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
