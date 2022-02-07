@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'app-card',
@@ -7,8 +6,8 @@ import { Character } from '../../interfaces/character.interface';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-  @Input() image: string = '';
-  @Input() name: string = '';
-  @Input() location: string = '';
+  @Input() image: string = 'https://rickandmortyapi.com/api/character/avatar/4.jpeg';
+  @Input() name: string = 'Beth';
+  @Input() location: string = 'Earth';
   @Input() status: 'Alive' | 'unknown' | 'Dead' = 'unknown';
 }
