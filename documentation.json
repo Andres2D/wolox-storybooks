@@ -1057,6 +1057,16 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
+                "name": "Danger",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1075,6 +1085,16 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "Error",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/alert/alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Large",
@@ -1137,6 +1157,66 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/alert/alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/input-form/input-form.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/footer/footer.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/navbar/navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1144,6 +1224,26 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
+            },
+            {
+                "name": "RequiredId",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/input-form/input-form.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "RickSanchez",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Secondary",
@@ -1194,6 +1294,76 @@
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CardComponent>",
+                "defaultValue": "(args: CardComponent) => ({\n    props: args\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/alert/alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<AlertComponent>",
+                "defaultValue": "(args: AlertComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/input-form/input-form.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<InputFormComponent>",
+                "defaultValue": "(args: InputFormComponent) => ({\n    props: args\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/footer/footer.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<FooterComponent>",
+                "defaultValue": "(args: FooterComponent) => ({\n    props: args\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CustomButtonComponent>",
+                "defaultValue": "(args: CustomButtonComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/navbar/navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<NavbarComponent>",
+                "defaultValue": "(args: NavbarComponent) => ({\n    props: args\n})"
+            },
+            {
+                "name": "Warning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/alert/alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             }
         ],
         "functions": [],
@@ -1221,6 +1391,38 @@
                     "type": "literal type"
                 }
             ],
+            "src/app/components/button/button.stories.ts": [
+                {
+                    "name": "Danger",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CustomButtonComponent>",
+                    "defaultValue": "(args: CustomButtonComponent) => ({\n    props: args,\n})"
+                }
+            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -1243,6 +1445,48 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/app/components/alert/alert.stories.ts": [
+                {
+                    "name": "Error",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/alert/alert.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/alert/alert.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/alert/alert.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<AlertComponent>",
+                    "defaultValue": "(args: AlertComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "Warning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/alert/alert.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -1360,6 +1604,114 @@
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
+            ],
+            "src/app/components/card/card.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "RickSanchez",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CardComponent>",
+                    "defaultValue": "(args: CardComponent) => ({\n    props: args\n})"
+                }
+            ],
+            "src/app/components/input-form/input-form.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/input-form/input-form.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "RequiredId",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/input-form/input-form.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/input-form/input-form.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<InputFormComponent>",
+                    "defaultValue": "(args: InputFormComponent) => ({\n    props: args\n})"
+                }
+            ],
+            "src/app/components/footer/footer.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/footer/footer.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/footer/footer.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<FooterComponent>",
+                    "defaultValue": "(args: FooterComponent) => ({\n    props: args\n})"
+                }
+            ],
+            "src/app/components/navbar/navbar.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navbar/navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navbar/navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<NavbarComponent>",
+                    "defaultValue": "(args: NavbarComponent) => ({\n    props: args\n})"
+                }
             ]
         },
         "groupedFunctions": {},
@@ -1395,7 +1747,7 @@
         ]
     },
     "coverage": {
-        "count": 2,
+        "count": 1,
         "status": "low",
         "files": [
             {
@@ -1417,12 +1769,82 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/alert/alert.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Error",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/alert/alert.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/alert/alert.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/alert/alert.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Warning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "CustomButtonComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Danger",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1435,10 +1857,60 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RickSanchez",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/footer/footer.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "FooterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/footer/footer.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/footer/footer.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1453,10 +1925,60 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/input-form/input-form.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/input-form/input-form.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RequiredId",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/input-form/input-form.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/navbar/navbar.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "NavbarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/navbar/navbar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/navbar/navbar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
