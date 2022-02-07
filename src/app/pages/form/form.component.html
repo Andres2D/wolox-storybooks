@@ -4,7 +4,7 @@
         *ngIf="showAlert"
         type="info"
         [closeButton]="true"
-        (closeAction)="showAlertMessage(false)"
+        (onClick)="showAlertMessage(false)"
     ></app-alert>
 
     <!-- Form -->
@@ -34,7 +34,7 @@
         <app-button
             type="success"
             label="Send"
-            (action)="showAlertMessage(true)"
+            (onClick)="showAlertMessage(true)"
         ></app-button>
     </div>
 </div>

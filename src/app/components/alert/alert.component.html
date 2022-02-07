@@ -9,6 +9,6 @@
     <p class="message">{{message}}</p>
     <span 
         *ngIf="closeButton"
-        (click)="close()"
+        (click)="onClick.emit($event)"
         >&times;</span>
 </div>

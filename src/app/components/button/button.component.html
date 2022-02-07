@@ -4,7 +4,8 @@
         'success': type === 'success',
         'danger': type === 'danger'
     }"
-    (click)="emitAction()"
+    type="button"
+    (click)="onClick.emit($event)"
     >
     {{label}}
 </button>

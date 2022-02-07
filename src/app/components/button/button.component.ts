@@ -9,9 +9,9 @@ export class CustomButtonComponent {
 
   @Input() type: 'success' | 'danger' = 'success';
   @Input() label: string = 'Click me!';
-  @Output() action: EventEmitter<boolean> = new EventEmitter();
+  @Output() onClick = new EventEmitter<Event>();
 
-  emitAction(): void {
-    this.action.emit();
-  }
+  // emitAction(): void {
+  //   this.action.emit();
+  // }
 }
