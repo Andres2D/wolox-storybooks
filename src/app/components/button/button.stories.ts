@@ -6,6 +6,19 @@ export default {
     component: CustomButtonComponent,
 }
 
+// Other option
+// export default {
+//     title: 'Components/CustomButton',
+//     component: CustomButtonComponent,
+//     argTypes: {
+//         type: {
+//             type: 'select',
+//             name: 'Button Type',
+//             options: ['danger', 'success']
+//         }  
+//     }
+// }
+
 const Template: Story<CustomButtonComponent> = (args: CustomButtonComponent) => ({
     props: args,
 });

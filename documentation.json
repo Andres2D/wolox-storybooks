@@ -788,21 +788,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "Error",
@@ -838,16 +838,6 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/input-form/input-form.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -868,6 +858,16 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/navbar/navbar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -878,7 +878,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/pages/form/form.stories.ts",
+                "file": "src/app/pages/home/home.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -888,7 +888,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/pages/home/home.stories.ts",
+                "file": "src/app/pages/form/form.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -947,16 +947,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CustomButtonComponent>",
-                "defaultValue": "(args: CustomButtonComponent) => ({\n    props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/input-form/input-form.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -977,6 +967,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CustomButtonComponent>",
+                "defaultValue": "(args: CustomButtonComponent) => ({\n    props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/navbar/navbar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -987,21 +987,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/pages/form/form.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<FormComponent>",
-                "defaultValue": "(args: FormComponent) => ({\n    moduleMetadata: {\n        declarations: [\n            FormComponent,\n            AlertComponent,\n            InputFormComponent,\n            CustomButtonComponent\n        ],\n        schemas: [CUSTOM_ELEMENTS_SCHEMA],\n    },\n    props: args\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/pages/home/home.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<HomeComponent>",
                 "defaultValue": "(args: HomeComponent) => ({\n    props: args,\n    moduleMetadata: {\n        declarations: [HomeComponent, CardComponent],\n        schemas: [CUSTOM_ELEMENTS_SCHEMA],\n    },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/form/form.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<FormComponent>",
+                "defaultValue": "(args: FormComponent) => ({\n    moduleMetadata: {\n        declarations: [\n            FormComponent,\n            AlertComponent,\n            InputFormComponent,\n            CustomButtonComponent\n        ],\n        schemas: [CUSTOM_ELEMENTS_SCHEMA],\n    },\n    props: args\n})"
             },
             {
                 "name": "Warning",
@@ -1071,18 +1071,6 @@
                     "defaultValue": "(args: CustomButtonComponent) => ({\n    props: args,\n})"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -1093,6 +1081,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/app/components/alert/alert.stories.ts": [
@@ -1245,28 +1245,6 @@
                     "defaultValue": "(args: NavbarComponent) => ({\n    props: args\n})"
                 }
             ],
-            "src/app/pages/form/form.stories.ts": [
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/pages/form/form.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/pages/form/form.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<FormComponent>",
-                    "defaultValue": "(args: FormComponent) => ({\n    moduleMetadata: {\n        declarations: [\n            FormComponent,\n            AlertComponent,\n            InputFormComponent,\n            CustomButtonComponent\n        ],\n        schemas: [CUSTOM_ELEMENTS_SCHEMA],\n    },\n    props: args\n})"
-                }
-            ],
             "src/app/pages/home/home.stories.ts": [
                 {
                     "name": "Primary",
@@ -1287,6 +1265,28 @@
                     "deprecationMessage": "",
                     "type": "Story<HomeComponent>",
                     "defaultValue": "(args: HomeComponent) => ({\n    props: args,\n    moduleMetadata: {\n        declarations: [HomeComponent, CardComponent],\n        schemas: [CUSTOM_ELEMENTS_SCHEMA],\n    },\n})"
+                }
+            ],
+            "src/app/pages/form/form.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/form/form.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/form/form.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<FormComponent>",
+                    "defaultValue": "(args: FormComponent) => ({\n    moduleMetadata: {\n        declarations: [\n            FormComponent,\n            AlertComponent,\n            InputFormComponent,\n            CustomButtonComponent\n        ],\n        schemas: [CUSTOM_ELEMENTS_SCHEMA],\n    },\n    props: args\n})"
                 }
             ]
         },
